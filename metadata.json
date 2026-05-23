@@ -1,0 +1,6 @@
+{
+  "name": "Personal Assistant",
+  "description": "A personal assistant that notifies you of upcoming calendar meetings and identifies important emails using Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
