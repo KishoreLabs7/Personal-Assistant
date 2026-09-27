@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Surfaces, darkest to lightest: page → card → inset → hovers */
+  --color-surface-0: #0c0c0e;   /* page background, loading overlay */
+  --color-surface-100: #121214; /* cards, panels, header */
+  --color-surface-200: #18181b; /* inset rows and fields inside a card */
+  --color-surface-300: #1a1a1c; /* row hover, subtle chips */
+  --color-surface-350: #1c1c1f; /* single-control hover */
+  --color-surface-400: #202024; /* tab and filter hover */
+
+  /* Lines and text */
+  --color-border: #27272a;      /* 1px border on cards, inputs, dividers */
+  --color-ink: #e4e4e7;         /* default body text */
+}
