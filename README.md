@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Personal Assistant
 
-# Run and deploy your AI Studio app
+A personal assistant that notifies you of upcoming calendar meetings and identifies important emails using Gemini AI.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/e0f8567c-274f-4185-b206-c2f840152731
+**Prerequisites:** Node.js
 
-## Run Locally
+1. Install dependencies: `npm install`
+2. Copy `.env.example` to `.env.local` and set `GEMINI_API_KEY` to your Gemini API key.
+3. Start the app: `npm run dev`
 
-**Prerequisites:**  Node.js
+## Scripts
 
+- `npm run dev` starts the dev server (Express + Vite).
+- `npm run build` builds the client and bundles the server into `dist/`.
+- `npm start` runs the production build.
+- `npm run lint` type-checks the project.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Styling
+
+The UI is dark-only and uses Tailwind CSS v4. The theme tokens live in the `@theme` block in `src/index.css`:
+
+- **Surfaces** go from `surface-0` (the page) through `surface-100` (cards) and `surface-200` (inset rows) up to `surface-300`, `surface-350` and `surface-400` (hover states).
+- **Lines and text:** `border` is the 1px line, and `ink` is the body text color.
+- **Accent and signals:** `blue-600` is the primary action color, `amber-500` marks upcoming items and `red-400`/`red-500` mark urgent ones. All three are Tailwind defaults.
+
+Use these token classes (for example `bg-surface-100 border-border text-ink`) rather than raw hex values.
